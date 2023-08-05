@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #233B5D;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.forms {
+  width: 50%;
+  height: 100vh;
+}
+.forms header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 70%;
+  margin: 0 auto;
+}
+.forms header nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdfdfd;
+  font-size: 20px;
+  letter-spacing: 1px;
+  gap: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.164);
+}
+.forms header nav .logo i {
+  color: #F36444;
+}
+.forms .container-forms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 85vh;
+  margin-top: -50px;
+}
+.forms .form-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.forms .form-options .created-account, .forms .form-options .login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fdfdfd;
+  width: 50%;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.forms .form-options .created-account.check, .forms .form-options .login.check {
+  border-bottom: 2px solid rgba(253, 253, 253, 0.6117647059);
+}
+.forms .form-options .created-account:hover, .forms .form-options .login:hover {
+  background-color: #2D4970;
+}
+.forms .form-created-account form, .forms .form-login form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  width: 320px;
+  margin: 0 auto;
+}
+.forms .form-created-account form input, .forms .form-login form input {
+  background-color: #2D4970;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  padding-left: 10px;
+  color: #fdfdfd;
+  letter-spacing: 1px;
+  font-weight: 500;
+  outline: none;
+  border: 2px solid transparent;
+}
+.forms .form-created-account form input::placeholder, .forms .form-login form input::placeholder {
+  color: #fdfdfd;
+}
+.forms .form-created-account form input.error, .forms .form-login form input.error {
+  border: 2px solid rgba(255, 0, 0, 0.384);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.219);
+}
+.forms .form-created-account form .create-account-btn, .forms .form-created-account form .login-btn, .forms .form-login form .create-account-btn, .forms .form-login form .login-btn {
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  background-color: #F36444;
+  color: #fdfdfd;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.forms .form-created-account form .create-account-btn:hover, .forms .form-created-account form .login-btn:hover, .forms .form-login form .create-account-btn:hover, .forms .form-login form .login-btn:hover {
+  background-color: #f17458;
+}
+.forms .form-login {
+  display: none;
+}
+
+.background {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background .container-bg {
+  background: url("https://i.pinimg.com/736x/6e/ea/2a/6eea2ac0fc953eb1c7aec42c4a12ca2a.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  width: 96%;
+  height: 96%;
+}
+
+.home-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-box .hometext {
+  font-size: 30px;
+  color: #fdfdfd;
+}
+
+/*# sourceMappingURL=style.css.map */

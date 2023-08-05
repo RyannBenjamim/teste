@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <script>
+        alert("Bem vindo!");
+        let nome = prompt("Informe seu nome: ");
+        let idade = prompt("Informe sua idade: ");
+        let idadeConfirmada = confirm(`A sua idade realmente é ${idade}?`);
+
+        if (idadeConfirmada == true) {
+            alert(`Seus dados: nome = ${nome}, idade = ${idade}`);
+        } else {
+            let idade = prompt("Informe sua real idade: ");
+            alert(`Seus dados: nome = ${nome}, idade = ${idade}`);
+        }
+    </script>
+</body>
+</html>

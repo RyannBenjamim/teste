@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças Pessoais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1>MyFinance</h1><i class="fa-solid fa-coins"></i></div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-form">
+            <h1>Finanças Pessoais</h1>
+            <form action="http://localhost:3000/transactions" method="post" class="new-transaction">
+                <h3>Nova Transação:</h3>
+                <p>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <p>
+                    <label for="value">Valor:</label>
+                    <input type="number" id="value" name="value">
+                </p>
+                <p>
+                    <label for="id">Id:</label>
+                    <input type="number" id="id" name="id">
+                </p>
+                <br>
+                <button class="transaction-btn">Finalizar</button><br>
+            </form>
+            <button class="edite-btn">Editar</button>
+            <p class="balance">Saldo: R$ 0</p>
+        </div>
+        <div class="container-transactions">
+            <h1>Suas Transações:</h1>
+            <div class="transactions"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Finanças Pessoais</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

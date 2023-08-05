@@ -1,0 +1,12 @@
+// -------------- HOME -------------- //
+
+.home-box {
+    width: 100%;
+    height: 100vh;
+    @include flexMixin();
+
+    .hometext {
+        font-size: 30px;
+        color: #fdfdfd;
+    }
+}

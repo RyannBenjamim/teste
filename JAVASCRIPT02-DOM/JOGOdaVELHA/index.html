@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#212529"/>
+    <title>Jogo da Velha - Por Ryan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onselectstart="return false">
+    <div class="tela01">
+        <form>
+            <div class="play">
+                <div class="players">
+                    <p>
+                        Jogador X : <br>
+                        <input type="text" id="jogadorx" maxlength="10" required>
+                    </p>
+                    <p>
+                        Jogador O : <br>
+                        <input type="text" id="jogadorO" maxlength="10" required>
+                    </p>
+                </div>
+                <button id="playBtn">COMEÇAR</button>
+            </div>
+            <div class="results">
+                <p>Vamos jogar?</p>
+            </div>
+        </form>
+    </div>
+    <div class="tabuleiro">
+        <div id="quadro01" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro02" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro03" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro04" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro05" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro06" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro07" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro08" class="quadros" data-click="no" data-mark=""></div>
+        <div id="quadro09" class="quadros" data-click="no" data-mark=""></div>
+    </div>
+
+    <div class="tela02">
+        <div class="placar">
+            <p id="jog01">Jogador 1: 0</p>
+            <p id="jog02">Jogador 2: 0</p>
+        </div>
+        <button>JOGAR MAIS UMA</button>
+    </div>
+
+    <audio src="sound/adriantnt_u_click.mp3" id="click"></audio>
+    <audio src="sound/sonic-extra-life.mp3" id="win"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

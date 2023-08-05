@@ -1,0 +1,35 @@
+* {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #181818;
+}
+
+span {
+    color: #f64348;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    color: #000;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.button {
+    color: #000;
+    cursor: pointer;
+    padding: 10px 30px;
+}
+
+.error {
+    border: 1px solid #f64348;
+}
+
+.success {
+    border: 1px solid #43f67f;
+}

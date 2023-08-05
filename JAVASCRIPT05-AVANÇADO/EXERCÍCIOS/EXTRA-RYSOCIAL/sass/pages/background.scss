@@ -1,0 +1,18 @@
+// -------------- BACKGROUND -------------- //
+
+.background {
+    width: 50%;
+    height: 100vh;
+    @include flexMixin();
+
+    .container-bg {
+        background: url('https://i.pinimg.com/736x/6e/ea/2a/6eea2ac0fc953eb1c7aec42c4a12ca2a.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+
+        width: 96%;
+        height: 96%;
+    }
+}

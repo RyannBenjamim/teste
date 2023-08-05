@@ -1,0 +1,26 @@
+// -------------- COMUNS -------------- //
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #233B5D;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+@mixin flexMixin() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

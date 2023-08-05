@@ -1,0 +1,28 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Ryan Costa",
+      "email": "ryancosta@gmail.com",
+      "password": "ryan123"
+    },
+    {
+      "name": "fulano",
+      "email": "fulanosilva@gmail.com",
+      "password": "fulano123",
+      "id": 2
+    },
+    {
+      "name": "Sâmia Costa Benjamim",
+      "email": "samta98@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "name": "goku",
+      "email": "goku@gmail.com",
+      "password": "123",
+      "id": 4
+    }
+  ]
+}

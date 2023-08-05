@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #f1f5f9;
+    --primary-color: #4dff91;
+    --secundary-color: #ff0043;
+}
+  
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.tela01, .tela02 {
+    border: 2px solid var(--secundary-color);
+    border-radius: 20px;
+    width: 45%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.tela01 .play {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tela01 .play .players {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tela01 .play input {
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 6px;
+    outline: none;
+    background-color: transparent;
+    color: var(--font-color);
+    border: 1px solid var(--secundary-color);
+    padding: 5px;
+}
+
+.tela01 .play button {
+    width: 20%;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--font-color);
+    border: 2px solid var(--secundary-color);
+    transition: 0.4s;
+}
+
+.tela01 .play button:hover {
+    background-color: var(--secundary-color);
+    color: var(--font-color);
+    border: 2px solid var(--secundary-color);
+}
+
+.tela01 .results {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 45%;
+    height: 460px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.quadros {
+    border: 2px solid var(--secundary-color);
+    width: 100% / 3;
+    height: 140px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50pt;
+}
+
+.tela02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.placar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tela02 button {
+    width: 30%;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 20px 10px;
+    color: var(--font-color);
+    border: 2px solid var(--secundary-color);
+    transition: 0.4s;
+}
+
+.tela02 button:hover {
+    background-color: var(--secundary-color);
+    color: var(--font-color);
+    border: 2px solid var(--secundary-color);
+}
+
+@media (max-width: 1200px) {
+    .tela01, .tela02, .tabuleiro {
+        width: 60%;
+    }
+}
+
+@media (max-width: 970px) {
+    .tela01, .tela02, .tabuleiro {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .tela01 .play {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tela01 .play .players {
+        justify-content: space-between;
+        align-items: none;
+    }
+
+    .tela01 .play button {
+        width: 90%;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    .tela01 .results {
+        width: 100%;
+    }
+
+    .tela01 .play .players p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }    
+
+    .tela01, .tela02, .tabuleiro {
+        width: 90%;
+    }
+}
+

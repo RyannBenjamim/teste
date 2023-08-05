@@ -1,0 +1,30 @@
+.classe1 ul {
+  background-color: red;
+}
+
+.classe1 li {
+  background-color: aquamarine;
+}
+
+.classe1 ul {
+  background-color: blue;
+}
+
+.classe1 li {
+  background-color: blanchedalmond;
+  padding: 15px;
+}
+
+.classe1 button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.classe1 button:hover {
+  background-color: rgba(0, 128, 0, 0.712);
+}
+/*# sourceMappingURL=main.css.map */
